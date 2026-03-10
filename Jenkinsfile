@@ -2,13 +2,13 @@ pipeline{
   agent any
   stages{
     stage('checkout'){
-      step{
+      steps{
         echo 'Checking out Repo'
         git 'https://github.com/pkirad22/html-jenkins.git'
       }
     }
     stage('Publish'){
-      step{
+      steps{
         publishHTML([
           allowmissing:true,
           alwaysLinktoLastBuild:false,

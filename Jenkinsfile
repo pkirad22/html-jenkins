@@ -10,9 +10,9 @@ pipeline{
     stage('Publish'){
       steps{
         publishHTML([
-          allowmissing:true,
-          alwaysLinktoLastBuild:false,
-          KeepAll:false,
+          allowMissing:true,
+          alwaysLinkToLastBuild:false,
+          keepAll:false,
           reportDir:'.',
           reportFiles:'html-jenkins.html',
           reportName:'MY HTML PIPE PAGE'

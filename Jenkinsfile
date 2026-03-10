@@ -14,7 +14,7 @@ pipeline{
           alwaysLinktoLastBuild:false,
           KeepAll:false,
           reportDir:'.',
-          reportFiles:'html-jenkin.html',
+          reportFiles:'html-jenkins.html',
           reportName:'MY HTML PIPE PAGE'
           ])
       }
